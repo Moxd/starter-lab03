@@ -11,7 +11,7 @@
  *
  * @author Andrew
  */
-class Last extends Application {
+class Welcome extends Application {
     //put your code here
     function __construct() {
         parent::__construct();
