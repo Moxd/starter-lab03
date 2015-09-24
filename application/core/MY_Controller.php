@@ -13,7 +13,6 @@ class Application extends CI_Controller {
 
     protected $data = array();      // parameters for view components
     protected $id;                  // identifier for our content
-
     /**
      * Constructor.
      * Establish view parameters & load common helpers
