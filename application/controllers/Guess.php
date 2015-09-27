@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Page for profile/quote for last character in data.
+ * Profile/Quote page for 4th character.
  * 
- * controllers/last/Welcome.php
+ * controllers/Guess.php
  *
  * ------------------------------------------------------------------------
  */
-class Welcome extends Application {
-    //put your code here
+class Guess extends Application {
+
     function __construct() {
         parent::__construct();
     }
@@ -16,11 +16,10 @@ class Welcome extends Application {
     //-------------------------------------------------------------
     //  The normal pages
     //-------------------------------------------------------------
-
     function index() {
         $this->data['pagebody'] = 'justone';    // this is the view we want shown
-        // Grab data for last quote.
-        $source = $this->quotes->last();
+        // Grab data for quote at index 4.
+        $source = $this->quotes->get(4);
     
         $this->data = array_merge($this->data, $source);
         
@@ -28,5 +27,5 @@ class Welcome extends Application {
     }
 }
 
-/* End of file Welcome.php */
-/* Location: application/controllers/last/Welcome.php */
+/* End of file Guess.php */
+/* Location: application/controllers/Guess.php */
